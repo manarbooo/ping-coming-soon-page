@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --Pale_Blue: hsl(223, 100%, 88%);
+    --Light_Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very_Dark_Blue: hsl(209, 33%, 12%);
+
+}
+
+body{
+    height: 150vh;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logo{
+    margin-top: 30px;
+    margin-bottom: -5px;
+}
+
+.headerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.firstHeading{
+    font-size: 40px;
+
+}
+
+.launching{
+    font-weight: 300;
+    color: var(--Gray);
+}
+
+.description{
+    margin-top: -15px;
+}
+
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputField{
+    width: 355px;
+    height: 42px;
+    padding-left: 20px;
+    border-radius: 25px;
+    border: 1px solid var(--Pale_Blue);
+   
+    
+}
+
+.inputField::placeholder{
+    color: var(--Pale_Blue);
+    font-size: 16px;
+}
+
+.form{
+    margin-top: 20px;
+}
+
+.button{
+    width: 160px;
+    height: 42px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--Blue);
+    color: white;
+    box-shadow: 0 5px 20px hsla(223, 87%, 63%, 0.298);
+   
+}
+
+.button:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.inputField:focus {
+    outline: none;
+}
+
+.errorMessage {
+    position: relative;
+    top: 5px;
+    right: 110px;
+    font-style: italic;
+    margin-right: 0;
+    font-size: 12px;
+    margin-top: 5px;
+    visibility: hidden; 
+}
+
+.errorMessage.show { 
+    visibility: visible; 
+}
+
+.mainImg{
+    width: 550px;
+   
+}
+
+.dashboard{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialsSec {
+    display: flex;
+    gap: 12px; 
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid hsl(226, 56%, 91%);
+}
+
+.fa-brands{
+    color: hsl(223, 87%, 63%); 
+    cursor: pointer;
+    font-size: 16px;
+}
+.icon:hover{
+    background-color: var(--Blue);
+    cursor: pointer;
+}
+.icon:hover .fa-brands{
+    color: white;
+}
+
+.Copyright{
+    color: var(--Gray);
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 572px){
+    
+    .logo{
+        font-size: 13px;
+    }
+    
+    
+    
+    .firstHeading{
+        font-size: 30px;
+    
+    }
+    
+    .description{
+        margin-top: -10px;
+    }
+    
+    
+    .mainContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .inputField{
+        width: 330px;
+        height: 45px;
+        padding-left: 20px;
+        border-radius: 25px;
+        border: 1px solid var(--Pale_Blue);
+        margin-right: 0;   
+        margin-bottom: 10px;
+    }
+    
+    .inputField::placeholder{
+        color: var(--Pale_Blue);
+        font-size: 16px;
+    }
+    
+    .form{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .button{
+        width: 350px;
+        height: 45px;
+        border-radius: 25px;
+        border: none;
+        background-color: var(--Blue);
+        color: white;
+        box-shadow: 0 5px 20px hsla(223, 87%, 63%, 0.298);
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+    
+    
+    
+    .inputField:focus {
+        outline: none;
+    }
+    
+    .errorMessage {
+        position: relative;
+        top: -75px;
+        right: 0;
+        font-style: italic;
+        margin-right: 0;
+        font-size: 12px;
+        margin-top: 5px;
+        visibility: hidden; 
+        
+    }
+    
+    .mainImg{
+        width: 90%;
+       
+    }
+    
+    .dashboard{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
+    
+    
+    
+    
+    
+    
+    
+}
